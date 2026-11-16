@@ -30,7 +30,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  google_mobile_ads: ^5.1.0
 
 
 

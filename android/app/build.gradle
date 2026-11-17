@@ -1,3 +1,4 @@
+
 plugins {
     id "com.android.application"
     id "kotlin-android"
@@ -26,6 +27,12 @@ android {
     namespace "com.example.vpn_app_new"
     compileSdk flutter.compileSdkVersion
     ndkVersion flutter.ndkVersion
+
+    packagingOptions {
+        jniLibs {
+            useLegacyPackaging true
+        }
+    }
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
